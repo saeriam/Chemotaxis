@@ -21,9 +21,11 @@
  class Seal    
  {     
  	int myX, myY;
+  int myColor;
  Seal()
  {
    myX = myY = 250;
+   myColor = color(255);
  }
    void walk()
  {
@@ -33,7 +35,7 @@
  void show()
  {
    noStroke();
-   fill(255);
+   fill(myColor);
    ellipse(myX, myY, 40, 30);
    ellipse(myX-20, myY+10, 15, 10);
    ellipse(myX+20, myY+10, 15, 10);
